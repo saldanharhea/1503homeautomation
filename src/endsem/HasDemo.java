@@ -15,20 +15,22 @@ public class HasDemo {
 	      HAS app1 = hasfac.getAppliance("HOMELIGHTS");
 
 	    
-	      app1.OnOff(flagOf);
+	      app1.OnOff(flagOn);
 	      
 
 	     
 	      HAS app2 = hasfac.getAppliance("AIRCONDITONER");
 
 	      
-	      app2.OnOff(flagOn);
+	      app2.OnOff(flagOf);
 
 	      
 	      HAS app3 = hasfac.getAppliance("WASHINGMACHINE");
 
 	     
-	      app3.OnOff(flagOf);
+	      app3.OnOff(flagOn);
+	      WashingMachine w1= new WashingMachine();
+	      w1.SpeedUp(10);
 	      
 	      HAS app4 = hasfac.getAppliance("TV");
 
@@ -43,6 +45,11 @@ public class HasDemo {
 	      Tv a2 = new Tv();		  
 	      a2.VolumeDown(20);
 	      a2.ChannelDown(80);
+	      
+	      
+	      app4.OnOff(flagOf);
+	      app3.OnOff(flagOf);
+	      app1.OnOff(flagOf);
 	      
 	   }
 	

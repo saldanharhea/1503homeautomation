@@ -3,7 +3,7 @@ package endsem;
 public class AudioSystem implements HAS {
 
 	   @Override
-	   public void OnOff(int flag) {
+	   public int OnOff(int flag) {
 	      System.out.println("this is an audio system ");
 	      
 	      
@@ -17,7 +17,7 @@ public class AudioSystem implements HAS {
 	    	  flag = 0;
 	      }
 	      
-	      
+	      return flag;
 	   }
 	   
 	   public void VolumeUp(int vol)

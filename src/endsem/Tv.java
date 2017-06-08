@@ -7,7 +7,7 @@ public class Tv implements HAS {
 
 	
 	   @Override
-	   public void OnOff(int flag) {
+	   public int OnOff(int flag) {
 	      System.out.println("this is a TV");
 	      
 	      
@@ -22,7 +22,7 @@ public class Tv implements HAS {
 	    	  System.out.println("Tv have been turned off");
 	    	  flag = 0;
 	      }
-	      
+return flag;
 	   }
 	   
 	   

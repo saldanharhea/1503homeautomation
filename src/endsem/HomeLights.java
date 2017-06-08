@@ -3,7 +3,7 @@ package endsem;
 public class HomeLights implements HAS {
 
 	   @Override
-	   public void OnOff(int flag) {
+	   public int OnOff(int flag) {
 		   
 	      System.out.println("these are lights");
 	      
@@ -16,6 +16,7 @@ public class HomeLights implements HAS {
 	    	  System.out.println("Lights have been turned off");
 	    	  flag = 0;
 	      }
+	      return flag;
 	   }
 	}
 

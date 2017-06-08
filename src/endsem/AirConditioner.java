@@ -5,7 +5,7 @@ public class AirConditioner implements HAS {
 	
 	
 	   @Override
-	   public void OnOff(int flag) {
+	   public int OnOff(int flag) {
 	      System.out.println("this is an airConditioner");
 	      
 	      
@@ -18,7 +18,7 @@ public class AirConditioner implements HAS {
 	    	  System.out.println("Airconditioner have been turned off");
 	    	  flag = 0;
 	      }
-	      
+	      return flag;
 	   }
 	}
 
