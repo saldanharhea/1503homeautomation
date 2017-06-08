@@ -1,6 +1,8 @@
 package endsem;
 
 public interface HAS {
-	   public void OnOff();
+	   public void OnOff(int flag);
+	   
+	   
 	   
 	}
