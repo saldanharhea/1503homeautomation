@@ -23,7 +23,7 @@ public class WashingMachine implements HAS {
 	   
 	   
 	   
-	   public void SpeedUp(int speed)
+	   public int SpeedUp(int speed)
 	   {
 		   if(speed<600)
 		   {
@@ -34,11 +34,12 @@ public class WashingMachine implements HAS {
 		   {
 			   System.out.println("the speed is at its maximum .. so cant increase speed" );
 		   }
+		   return speed;
 	   }
 	   
 	   
 	   
-	   public void SpeedDown(int speed)
+	   public int SpeedDown(int speed)
 	   {
 		   if(speed>0)
 		   {
@@ -49,6 +50,8 @@ public class WashingMachine implements HAS {
 		   {
 			   System.out.println("the Speed is at its minimum... so cant decress the speed" );
 		   }
+		   
+		   return speed;
 	   }
 	   
 	   
